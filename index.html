@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>ДЗ 22. Форма для реєстрації</title>
+</head>
+<body>
+<form name="myProfile" id="myProfileForm">
+    <p><input type="text" name="firstname" placeholder="enter your firstname"></p>
+    <p><input type="text" name="lastname" placeholder="enter your lastname"></p>
+    <p><input type="date" name="dateOfBirth"></p>
+    <p><input type="radio" name="gender" value="M">Male</p>
+    <p><input type="radio" name="gender" value="F">Female</p>
+    <select name="yourCity">
+        <option value="0">select city</option>
+        <option value="1">Kharkiv</option>
+        <option value="2">Kyiv</option>
+        <option value="3">Dnipro</option>
+        <option value="4">Odesa</option>
+        <option value="5">Zaporizhia</option>
+    </select>
+    <p><textarea name="addressOfResidence" cols="20" rows="3" placeholder="Enter your residential address "
+                 ></textarea>
+    </p>
+    <p><input type="checkbox" name="languages" value="en"/> English </p>
+    <p><input type="checkbox" name="languages" value="de"/> Deutsch </p>
+    <p><input type="checkbox" name="languages" value="ru"/> Russian </p>
+    <p><input type="checkbox" name="languages" value="ua"/> Ukrainian </p>
+    <p><input type="submit" value="Save" id="SaveBtn"/></p>
+</form>
+<table id="myProfileTable" style="display: none;">
+    <thead>
+    <tr>
+        <th>Field</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody id="profileData">
+    <tr>
+        <td>Firstname:</td>
+        <td id="firstnameCell"></td>
+    </tr>
+    <tr>
+        <td>Lastname:</td>
+        <td id="lastnameCell"></td>
+    </tr>
+    <tr>
+        <td>Date of Birth:</td>
+        <td id="dateOfBirthCell"></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td id="genderCell"></td>
+    </tr>
+    <tr>
+        <td>City:</td>
+        <td id="cityCell"></td>
+
+    </tr>
+    <tr>
+        <td>Languages:</td>
+        <td id="languagesCell"></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td id="addressOfResidenceCell"></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<script src="./js/app.js"></script>
+</body>
+</html>
